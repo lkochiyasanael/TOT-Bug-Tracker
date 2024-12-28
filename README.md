@@ -14,7 +14,7 @@ We're grateful you decided to help improve TNO: The Operation Thunderstorm, than
 
 ---
 
-The New Order: The Operation Thunderstorm 公共BUG提交与论坛
+The New Order: The Operation Thunderstorm BUG提交与论坛
 
 请在此提交[**Steam**](https://steamcommunity.com/sharedfiles/filedetails/?id=3379310704)版本MOD中出现的问题报告。
 
