@@ -29,7 +29,7 @@ body:
     id: other_mods
     attributes:
       label: Do you have other mods in use? (您是否使用了其他模组？)
-      description: "Write none if you only have TNO enabled." (如果只有启用TNO，请写“none”)
+      description: "Write none if you only have TNO enabled. (如果只有启用TNO，请写“none”)"
       placeholder: ex. The Moe Order (示例：The Moe Order)
     validations:
       required: true
