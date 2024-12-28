@@ -1,6 +1,6 @@
 name: Suggestions
 description: For requesting reasonable and specific changes to TNO. NOTE - Reasonable and specific changes only (请求对TNO进行合理且具体的更改。注意：仅限合理且具体的更改)
-title: "Country Affected - Short Description of Suggestion" ("受影响的国家 - 建议简短描述")
+title: "Country Affected - Short Description of Suggestion (受影响的国家 - 建议简短描述)"
 labels: Suggestion
 
 body:

@@ -1,6 +1,6 @@
 name: Map
 description: For issues relating to the map, unit placements, and victory point locations (与地图、单位位置和胜利点位置相关的问题)
-title: "[Bug]: Country Affected - Short Description of Issue" ("[Bug]：受影响的国家 - 问题简短描述")
+title: "[Bug]: Country Affected - Short Description of Issue ([Bug]：受影响的国家 - 问题简短描述)"
 labels: Bug
 
 body:
