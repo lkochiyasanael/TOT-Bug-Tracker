@@ -1,66 +1,75 @@
 name: Suggestions
-description: For requesting reasonable and specific changes to TNO. NOTE - Reasonable and specific changes only
-title: "Country Affected - Short Description of Suggestion"
+description: For requesting reasonable and specific changes to TNO. NOTE - Reasonable and specific changes only (请求对TNO进行合理且具体的更改。注意：仅限合理且具体的更改)
+title: "Country Affected - Short Description of Suggestion" ("受影响的国家 - 建议简短描述")
 labels: Suggestion
 
 body:
   - type: markdown
     attributes:
-      value: There is no guarantee that requested suggestions will be implemented. Do not request lore changes or sweeping adjustments to gameplay or content. Suggestions may be closed at any time. If you can't explain your suggestion succinctly in under a paragraph, it likely isn't something that would be accepted.
+      value: |
+        There is no guarantee that requested suggestions will be implemented. Do not request lore changes or sweeping adjustments to gameplay or content. Suggestions may be closed at any time. If you can't explain your suggestion succinctly in under a paragraph, it likely isn't something that would be accepted. 
+        (没有保证所请求的建议会被实施。请不要请求更改背景故事或对游戏玩法或内容进行大范围调整。建议随时可能被关闭。如果您无法在一段话内简洁地解释您的建议，那么它可能不会被接受。)
   - type: input
     id: HOI4_version
     attributes:
-      label: HOI4 version
-      placeholder: Do NOT write latest version. ex. 1.11.7
+      label: HOI4 version (HOI4版本)
+      placeholder: Do NOT write latest version. ex. 1.15.3 (请勿填写最新版本，例如要写 1.15.3)
     validations:
       required: true
   - type: input
     id: TNO_version
     attributes:
-      label: TNO version
-      placeholder: Do NOT write latest version. ex. 1.2.1b
+      label: TNO version (TNO版本)
+      placeholder: Do NOT write latest version. ex. 1.7.0 (请勿填写最新版本，例如要写 1.7.0)
+    validations:
+      required: true
+  - type: input
+    id: TOT_version
+    attributes:
+      label: TOT version (TOT版本)
+      placeholder: Do NOT write latest version. ex. 1.6c (请勿填写最新版本，例如要写 1.6c)
     validations:
       required: true
   - type: dropdown
     id: expansion
     attributes:
-      label: Which major expansions do you NOT have?
-      description: Click all expansions that you don't have.
+      label: Which major expansions do you NOT have? (您没有哪些大型扩展包？)
+      description: Click all expansions that you don't have. (选择您没有的所有扩展包。)
       multiple: true
       options:
-        - 'I have all'
-        - 'MTG'
-        - 'LAR'
-        - 'NSB'
-        - 'BBA'
-        - 'AAT'
-        - 'TOA'
+        - 'I have all (我有所有扩展包)'
+        - 'MTG (MTG)'
+        - 'LAR (LAR)'
+        - 'NSB (NSB)'
+        - 'BBA (BBA)'
+        - 'AAT (AAT)'
+        - 'TOA (TOA)'
   - type: textarea
     id: suggestiondesc
     attributes:
-      label: Describe your suggestion
+      label: Describe your suggestion (描述您的建议)
       description: |
-        A clear and concise description of what you suggests
+        A clear and concise description of what you suggest (简明清晰地描述您的建议)
     validations:
       required: true
   - type: textarea
     id: justification
     attributes:
-      label: Justifications
-      description: Tell us why this change is necessary
+      label: Justifications (理由)
+      description: Tell us why this change is necessary (告诉我们为什么这个更改是必要的)
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your suggestion
+      label: Screenshots (截图)
+      description: If applicable, add screenshots to help explain your suggestion (如果适用，添加截图以帮助解释您的建议)
     validations:
       required: false
   - type: textarea
     id: additional
     attributes:
-      label: Additional information
-      description: Add any other context about the suggestion here
+      label: Additional information (其他信息)
+      description: Add any other context about the suggestion here (在此添加关于建议的其他背景信息)
     validations:
       required: false

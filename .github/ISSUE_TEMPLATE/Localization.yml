@@ -1,86 +1,94 @@
 name: Localization
-description: For small issues related to spelling, grammar, and other typos. NOTE - If text is partially missing or absent entirely, please fill out a Bug issue type instead
-title: "Country Affected - Short Description of Issue"
+description: For small issues related to spelling, grammar, and other typos. NOTE - If text is partially missing or absent entirely, please fill out a Bug issue type instead (用于与拼写、语法及其他错别字相关的小问题。注意：如果文本部分缺失或完全缺失，请填写 Bug 类型的问题。)
+title: "Country Affected - Short Description of Issue" (受影响的国家 - 问题简短描述)
 labels: Localization
 
 body:
   - type: input
     id: HOI4_version
     attributes:
-      label: HOI4 version
-      placeholder: Do NOT write latest version. ex. 1.11.7
+      label: HOI4 version (HOI4版本)
+      placeholder: Do NOT write latest version. ex. 1.15.3 (请勿填写最新版本，例如要写 1.15.3)
     validations:
       required: true
   - type: input
     id: TNO_version
     attributes:
-      label: TNO version
-      placeholder: Do NOT write latest version. ex. 1.2.1b
+      label: TNO version (TNO版本)
+      placeholder: Do NOT write latest version. ex. 1.7.0 (请勿填写最新版本，例如要写 1.7.0)
+    validations:
+      required: true
+  - type: input
+    id: TOT_version
+    attributes:
+      label: TOT version (TOT版本)
+      placeholder: Do NOT write latest version. ex. 1.6c (请勿填写最新版本，例如要写 1.6c)
     validations:
       required: true
   - type: input
     id: other_mods
     attributes:
-      label: Do you have other mods in use?
-      description: "Write none if you only have TNO enabled."
-      placeholder: ex. The Moe Order
+      label: Do you have other mods in use? (您是否使用了其他模组？)
+      description: "Write none if you only have TNO enabled." (如果只有启用TNO，请写“none”)
+      placeholder: ex. The Moe Order (示例：The Moe Order)
     validations:
       required: true
   - type: dropdown
     id: steam
     attributes:
-      label: Were you using Steam?
+      label: Were you using Steam? (您是否使用了Steam？)
       options:
-        - 'Yes'
-        - 'No'
+        - 'Yes (是)'
+        - 'No (否)'
     validations:
       required: true
   - type: dropdown
     id: expansion
     attributes:
-      label: Which major expansions do you NOT have?
-      description: Click all expansions that you don't have.
+      label: Which major expansions do you NOT have? (您没有哪些大型扩展包？)
+      description: Click all expansions that you don't have. (选择您没有的所有扩展包。)
       multiple: true
       options:
-        - 'I have all'
-        - 'MTG'
-        - 'LAR'
-        - 'NSB'
-        - 'BBA'
-        - 'AAT'
-        - 'TOA'
+        - 'I have all (我有所有扩展包)'
+        - 'MTG (MTG)'
+        - 'LAR (LAR)'
+        - 'NSB (NSB)'
+        - 'BBA (BBA)'
+        - 'AAT (AAT)'
+        - 'TOA (TOA)'
     validations:
       required: true
   - type: textarea
     id: files
     attributes:
-      label: Files
+      label: Files (文件)
       description: |
-        Link(s) to any log files / save games that may help debug your issue.
-        The most important one is error.log
-        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs
-        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games
-      placeholder: 
+        Link(s) to any log files / save games that may help debug your issue. (提供任何可能有助于调试问题的日志文件或存档文件的链接。)
+        The most important one is error.log (最重要的文件是 error.log)
+        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs (日志文件位于 Documents\Paradox Interactive\Hearts of Iron IV\logs)
+        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games (存档文件位于 Documents\Paradox Interactive\Hearts of Iron IV\save games)
+      placeholder: (请提供文件链接)
     validations:
       required: false
   - type: textarea
     id: bugdesc
     attributes:
-      label: List the loc issues below
+      label: List the loc issues below (列出以下的本地化问题)
       description: |
-        List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown).
-        Please limit the list to 100 issues. Create another bug report if more are found.
+        List the Loc issues down below (preferably with screenshot attached below with event id / focus id shown). (在下方列出本地化问题（最好附上带有事件ID/焦点ID的截图）。)
+        Please limit the list to 100 issues. Create another bug report if more are found. (请将问题数量限制为100个。如果有更多问题，请创建另一个bug报告。)
       placeholder: |
         - [ ] 1. 
-        (Screenshot here)
+        (Screenshot here) (截图)
         - [ ] 2. 
-        (Screenshot here)
+        (Screenshot here) (截图)
     validations:
       required: true
   - type: textarea
     id: additional
     attributes:
-      label: Additional information
-      description: Add any other context about the problem here
+      label: Additional information (其他信息)
+      description: Add any other context about the problem here (在此添加有关问题的其他背景信息)
+      placeholder: (如果有，请提供其他信息)
     validations:
       required: false

@@ -1,114 +1,125 @@
 name: Graphics
-description: For issues about 2D and 3D graphics, such as focus icons, unit models, and flags
-title: Country Affected - Short Description of Issue
+description: For issues about 2D and 3D graphics, such as focus icons, unit models, and flags (用于2D和3D图形问题，如焦点图标、单位模型和旗帜)
+title: Country Affected - Short Description of Issue (受影响的国家 - 问题简短描述)
 labels: GFX/Graphics
 
 body:
   - type: input
     id: OS
     attributes:
-      label: Operating System
-      placeholder: ex. Windows 11, macOS Monterey
+      label: Operating System (操作系统)
+      placeholder: ex. Windows 11, macOS Monterey (示例：Windows 11, macOS Monterey)
     validations:
       required: true
   - type: input
     id: HOI4_version
     attributes:
-      label: HOI4 version
-      placeholder: Do NOT write latest version. ex. 1.11.7
+      label: HOI4 version (HOI4版本)
+      placeholder: Do NOT write latest version. ex. 1.15.3 (请勿填写最新版本，例如要写 1.15.3)
     validations:
       required: true
   - type: input
     id: TNO_version
     attributes:
-      label: TNO version
-      placeholder: Do NOT write latest version. ex. 1.2.1b
+      label: TNO version (TNO版本)
+      placeholder: Do NOT write latest version. ex. 1.7.0 (请勿填写最新版本，例如要写 1.7.0)
+    validations:
+      required: true
+  - type: input
+    id: TOT_version
+    attributes:
+      label: TOT version (TOT版本)
+      placeholder: Do NOT write latest version. ex. 1.6c (请勿填写最新版本，例如要写 1.6c)
     validations:
       required: true
   - type: input
     id: other_mods
     attributes:
-      label: Do you have other mods in use?
-      description: "Write none if you only have TNO enabled."
-      placeholder: ex. The Moe Order
+      label: Do you have other mods in use? (您是否使用了其他模组？)
+      description: "Write none if you only have TNO enabled." (如果只有启用TNO，请写“none”)
+      placeholder: ex. The Moe Order (示例：The Moe Order)
     validations:
       required: true
   - type: dropdown
     id: steam
     attributes:
-      label: Were you using Steam?
+      label: Were you using Steam? (您是否使用了Steam？)
       options:
-        - 'Yes'
-        - 'No'
+        - 'Yes (是)'
+        - 'No (否)'
     validations:
       required: true
   - type: dropdown
     id: expansion
     attributes:
-      label: Which major expansions do you NOT have?
-      description: Click all expansions that you don't have.
+      label: Which major expansions do you NOT have? (您没有哪些大型扩展包？)
+      description: Click all expansions that you don't have. (选择您没有的所有扩展包。)
       multiple: true
       options:
-        - 'I have all'
-        - 'MTG'
-        - 'LAR'
-        - 'NSB'
-        - 'BBA'
-        - 'AAT'
-        - 'TOA'
+        - 'I have all (我有所有扩展包)'
+        - 'MTG (MTG)'
+        - 'LAR (LAR)'
+        - 'NSB (NSB)'
+        - 'BBA (BBA)'
+        - 'AAT (AAT)'
+        - 'TOA (TOA)'
     validations:
       required: true
   - type: textarea
     id: files
     attributes:
-      label: Files
+      label: Files (文件)
       description: |
-        Link(s) to any log files / save games that may help debug your issue.
-        The most important one is error.log
-        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs
-        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games
-      placeholder: 
+        Link(s) to any log files / save games that may help debug your issue. (提供任何可能有助于调试问题的日志文件或存档文件的链接。)
+        The most important one is error.log (最重要的文件是 error.log)
+        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs (日志文件位于 Documents\Paradox Interactive\Hearts of Iron IV\logs)
+        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games (存档文件位于 Documents\Paradox Interactive\Hearts of Iron IV\save games)
+      placeholder: (请提供文件链接)
     validations:
       required: false
   - type: textarea
     id: bugdesc
     attributes:
-      label: Describe the GFX issue
+      label: Describe the GFX issue (描述图形问题)
       description: |
-        A clear and concise description of what the GFX issue is
+        A clear and concise description of what the GFX issue is (清晰简洁地描述图形问题的具体情况)
+      placeholder: (请简要描述图形问题)
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce / Cause of the issue
-      description: Tell us how we can reproduce the issue / fix this issue
+      label: Steps to reproduce / Cause of the issue (重现步骤 / 问题原因)
+      description: Tell us how we can reproduce the issue / fix this issue (告诉我们如何重现此问题 / 修复此问题)
       placeholder: |
-        1. Go to ...  
-        2. Click on ...  
-        3. Scroll down to ...  
-        4. See error
+        1. Go to ...  (1. 进入...)
+        2. Click on ...  (2. 点击...)
+        3. Scroll down to ...  (3. 滚动到...)
+        4. See error  (4. 查看错误)
     validations:
       required: true
   - type: input
     id: expectedBehaviour
     attributes:
-      label: Expected behaviour
+      label: Expected behaviour (预期行为)
       description: |
-        A clear and concise description of what you expected to happen.
+        A clear and concise description of what you expected to happen. (清晰简洁地描述您期望发生的行为。)
+      placeholder: (请简要描述期望的行为)
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
+      label: Screenshots (截图)
+      description: If applicable, add screenshots to help explain your problem. (如果适用，请添加截图以帮助解释您的问题。)
+      placeholder: (如果有，上传截图)
     validations:
       required: false
   - type: textarea
     id: additional
     attributes:
-      label: Additional information
-      description: Add any other context about the problem here
+      label: Additional information (其他信息)
+      description: Add any other context about the problem here (在此添加有关问题的其他背景信息)
+      placeholder: (如果有，请提供其他信息)
     validations:
       required: false

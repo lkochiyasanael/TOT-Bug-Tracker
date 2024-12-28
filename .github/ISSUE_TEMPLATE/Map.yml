@@ -1,114 +1,122 @@
 name: Map
-description: For issues relating to the map, unit placements, and victory point locations
-title: "[Bug]: Country Affected - Short Description of Issue"
+description: For issues relating to the map, unit placements, and victory point locations (与地图、单位位置和胜利点位置相关的问题)
+title: "[Bug]: Country Affected - Short Description of Issue" ("[Bug]：受影响的国家 - 问题简短描述")
 labels: Bug
 
 body:
   - type: input
     id: OS
     attributes:
-      label: Operating System
-      placeholder: ex. Windows 11, macOS Monterey
+      label: Operating System (操作系统)
+      placeholder: ex. Windows 11, macOS Monterey (例如 Windows 11，macOS Monterey)
     validations:
       required: true
   - type: input
     id: HOI4_version
     attributes:
-      label: HOI4 version
-      placeholder: Do NOT write latest version. ex. 1.11.7
+      label: HOI4 version (HOI4版本)
+      placeholder: Do NOT write latest version. ex. 1.15.3 (请勿填写最新版本，例如要写 1.15.3)
     validations:
       required: true
   - type: input
     id: TNO_version
     attributes:
-      label: TNO version
-      placeholder: Do NOT write latest version. ex. 1.2.1b
+      label: TNO version (TNO版本)
+      placeholder: Do NOT write latest version. ex. 1.7.0 (请勿填写最新版本，例如要写 1.7.0)
+    validations:
+      required: true
+  - type: input
+    id: TOT_version
+    attributes:
+      label: TOT version (TOT版本)
+      placeholder: Do NOT write latest version. ex. 1.6c (请勿填写最新版本，例如要写 1.6c)
     validations:
       required: true
   - type: input
     id: other_mods
     attributes:
-      label: Do you have other mods in use?
-      description: "Write none if you only have TNO enabled."
-      placeholder: ex. The Moe Order
+      label: Do you have other mods in use? (您是否使用了其他模组？)
+      description: "Write none if you only have TNO enabled." (如果只有启用TNO，请写“none”)
+      placeholder: ex. The Moe Order (示例：The Moe Order)
     validations:
       required: true
   - type: dropdown
     id: steam
     attributes:
-      label: Were you using Steam?
+      label: Were you using Steam? (您是否使用了Steam？)
       options:
-        - 'Yes'
-        - 'No'
+        - 'Yes (是)'
+        - 'No (否)'
     validations:
       required: true
   - type: dropdown
     id: expansion
     attributes:
-      label: Which major expansions do you NOT have?
-      description: Click all expansions that you don't have.
+      label: Which major expansions do you NOT have? (您没有哪些大型扩展包？)
+      description: Click all expansions that you don't have. (选择您没有的所有扩展包。)
       multiple: true
       options:
-        - 'I have all'
-        - 'MTG'
-        - 'LAR'
-        - 'NSB'
-        - 'BBA'
-        - 'AAT'
-        - 'TOA'
+        - 'I have all (我有所有扩展包)'
+        - 'MTG (MTG)'
+        - 'LAR (LAR)'
+        - 'NSB (NSB)'
+        - 'BBA (BBA)'
+        - 'AAT (AAT)'
+        - 'TOA (TOA)'
     validations:
       required: true
   - type: textarea
     id: files
     attributes:
-      label: Files
+      label: Files (文件)
       description: |
-        Link(s) to any log files / save games that may help debug your issue.
-        The most important one is error.log
-        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs
-        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games
-      placeholder: 
+        Link(s) to any log files / save games that may help debug your issue. (提供任何可能有助于调试问题的日志文件或存档文件的链接。)
+        The most important one is error.log (最重要的文件是 error.log)
+        Log files can be found under Documents\Paradox Interactive\Hearts of Iron IV\logs (日志文件位于 Documents\Paradox Interactive\Hearts of Iron IV\logs)
+        Save games can be found under Documents\Paradox Interactive\Hearts of Iron IV\save games (存档文件位于 Documents\Paradox Interactive\Hearts of Iron IV\save games)
+      placeholder: (请提供文件链接)
     validations:
       required: false
   - type: textarea
     id: bugdesc
     attributes:
-      label: Describe the bug
+      label: Describe the bug (描述问题)
       description: |
-        A clear and concise description of what the bug is
+        A clear and concise description of what the bug is (简明清晰地描述问题是什么)
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce / Cause of the issue
-      description: Tell us how we can reproduce the issue / fix this issue
+      label: Steps to reproduce / Cause of the issue (重现问题的步骤/问题原因)
+      description: Tell us how we can reproduce the issue / fix this issue (告诉我们如何重现该问题或修复此问题)
       placeholder: |
         1. Go to ...  
         2. Click on ...  
         3. Scroll down to ...  
-        4. See error
+        4. See error (1. 转到... 2. 点击... 3. 向下滚动到... 4. 查看错误)
     validations:
       required: true
   - type: input
     id: expectedBehaviour
     attributes:
-      label: Expected behaviour
+      label: Expected behaviour (期望的行为)
       description: |
-        A clear and concise description of what you expected to happen.
+        A clear and concise description of what you expected to happen. (简洁明了地描述您期望发生的情况)
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
+      label: Screenshots (截图)
+      description: If applicable, add screenshots to help explain your problem. (如果适用，添加截图以帮助解释您的问题。)
     validations:
       required: false
   - type: textarea
     id: additional
     attributes:
-      label: Additional information
-      description: Add any other context about the problem here
+      label: Additional information (其他信息)
+      description: Add any other context about the problem here (在此添加关于问题的其他背景信息)
+      placeholder: (如果有其他信息，请提供)
     validations:
       required: false
