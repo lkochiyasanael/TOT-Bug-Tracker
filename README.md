@@ -8,7 +8,7 @@ Make sure you don't submit duplicate issues, search to make sure your issue hasn
 
 Please keep everything in English/Chinese/Japanese.
 
-[**> Submit a new issue**](https://github.com/lkochiyasanael/TOT-Bug-Tracker)
+[**> Submit a new issue**](https://github.com/lkochiyasanael/TOT-Bug-Tracker/issues/new/choose)
 
 We're grateful you decided to help improve TNO: The Operation Thunderstorm, thanks for your report.
 
@@ -22,6 +22,6 @@ The New Order: The Operation Thunderstorm 公共BUG提交与论坛
 
 请使用英语/中文/日语提交问题。
 
-[**> 提交新问题**](https://github.com/lkochiyasanael/TOT-Bug-Tracker)
+[**> 提交新问题**](https://github.com/lkochiyasanael/TOT-Bug-Tracker/issues/new/choose)
 
 感谢您决定帮助改善 TNO: The Operation Thunderstorm，感谢您的反馈。
