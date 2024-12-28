@@ -8,6 +8,6 @@ Make sure you don't submit duplicate issues, search to make sure your issue hasn
 
 Please keep everything in English/Chinese/Japanese.
 
-[**> Submit a new issue**]()
+[**> Submit a new issue**](https://github.com/lkochiyasanael/TOT-Bug-Tracker)
 
 We're grateful you decided to help improve TNO: The Operation Thunderstorm, thanks for your report.
