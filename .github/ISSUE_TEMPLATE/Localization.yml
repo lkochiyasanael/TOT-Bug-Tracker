@@ -1,5 +1,5 @@
 name: Localization
-description: For small issues related to spelling, grammar, and other typos. NOTE - If text is partially missing or absent entirely, please fill out a Bug issue type instead (用于与拼写、语法及其他错别字相关的小问题。注意：如果文本部分缺失或完全缺失，请填写 Bug 类型的问题。)
+description: For minor spelling, grammar, and typo issues. For missing or absent text, use Bug issue type instead. (用于报告拼写、语法和错别字的小问题。若文本缺失或完全缺失，请新建Bug类型的问题。)
 title: "Country Affected - Short Description of Issue (受影响的国家 - 问题简短描述)"
 labels: Localization
 
