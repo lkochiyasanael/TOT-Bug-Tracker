@@ -2,7 +2,7 @@
 
 Public bug submission tracker and forum for The New Order: The Operation Thunderstorm
 
-Submit bug reports here for issues present on both the [**Steam**](https://steamcommunity.com/sharedfiles/filedetails/?id=3379310704) versions of the mod.
+Submit bug reports here for issues present on the [**Steam**](https://steamcommunity.com/sharedfiles/filedetails/?id=3379310704) versions of the mod.
 
 Make sure you don't submit duplicate issues, search to make sure your issue hasn't already been reported.
 
